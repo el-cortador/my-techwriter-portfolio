@@ -76,6 +76,6 @@ params:
 
 ## Контакты
 
-- Email: [your.email@example.com](mailto: d.o.razvozzhaev@yandex.ru)
-- Telegram: [@yourhandle](https://t.me/el_cortador)
-- GitHub: [github.com/yourhandle](https://github.com/el-cortador)
+- Email: [d.o.razvozzhaev@yandex.ru](d.o.razvozzhaev@yandex.ru)
+- Telegram: [@el_cortador](https://t.me/el_cortador)
+- GitHub: [github.com/el-cortador](https://github.com/el-cortador)
