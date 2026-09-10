@@ -76,6 +76,6 @@ params:
 
 ## Контакты
 
-- Email: [d.o.razvozzhaev@yandex.ru](d.o.razvozzhaev@yandex.ru)
+- Email: [d.o.razvozzhaev@yandex.ru](mailto:d.o.razvozzhaev@yandex.ru)
 - Telegram: [@el_cortador](https://t.me/el_cortador)
 - GitHub: [github.com/el-cortador](https://github.com/el-cortador)
