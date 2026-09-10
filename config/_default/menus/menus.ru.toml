@@ -2,11 +2,11 @@
 # and a leading slash drops the /my-techwriter-portfolio/ subpath.
 
 [[main]]
-  name = "About"
+  name = "Обо мне"
   pageRef = "/about"
   weight = 10
 
 [[main]]
-  name = "Documentation samples"
+  name = "Примеры документации"
   pageRef = "/docs"
   weight = 20

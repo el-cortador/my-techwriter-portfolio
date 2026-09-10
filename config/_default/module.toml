@@ -74,6 +74,12 @@
   source = "node_modules/@thulite/doks-core/assets"
   target = "assets"
 
+# Multilingual mode: Doks loads js/flexsearch.<lang>.js for every
+# non-default language, so expose the theme file under the EN name
+[[mounts]]
+  source = "node_modules/@thulite/doks-core/assets/js/flexsearch.js"
+  target = "assets/js/flexsearch.en.js"
+
 [[mounts]]
   source = "node_modules/@tabler/icons/icons"
   target = "assets/svgs/tabler-icons"

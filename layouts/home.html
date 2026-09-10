@@ -1,3 +1,7 @@
+{{- /*
+  Landing page: hero from title/lead and link cards from params.cards
+  in content/_index.md (one entry per card: title, text, page, icon).
+*/ -}}
 {{ define "main" }}
 <section class="section container-fluid mt-n3 pb-3">
   <div class="row justify-content-center">
@@ -5,12 +9,37 @@
       <h1>{{ .Title }}</h1>
     </div>
     <div class="col-lg-9 col-xl-8 text-center">
-      <p class="lead">{{ .Params.lead | safeHTML }}</p>
-      <a class="btn btn-primary btn-cta rounded-pill btn-lg my-3" href="/docs/{{ if site.Params.doks.docsVersioning }}{{ site.Params.doks.docsVersion }}/{{ end }}guides/example-guide/" role="button">{{ i18n "get_started" }}</a>
+      {{ with .Params.lead }}<p class="lead">{{ . | safeHTML }}</p>{{ end }}
       {{ .Content }}
     </div>
   </div>
 </section>
+
+{{ with .Params.cards }}
+<section class="section section-md">
+  <div class="container">
+    <div class="row justify-content-center g-4">
+      {{ range . }}
+        {{ $target := site.GetPage .page }}
+        {{ if not $target }}
+          {{ errorf "home.html: page %q from params.cards not found" .page }}
+        {{ end }}
+        <div class="col-md-6 col-lg-5">
+          <div class="card h-100">
+            <div class="card-body p-4">
+              {{ with .icon }}{{ partial "inline-svg" (dict "src" . "class" "mb-3") }}{{ end }}
+              <h2 class="h4 card-title">
+                <a class="stretched-link text-reset text-decoration-none" href="{{ $target.RelPermalink }}">{{ .title }}</a>
+              </h2>
+              <p class="card-text mb-0">{{ .text }}</p>
+            </div>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
 {{ end }}
 
 {{ define "sidebar-prefooter" }}
@@ -19,41 +48,6 @@
     <div class="bg-dots"></div>
   </div>
   {{ end -}}
-  {{ if eq $.Site.Language.LanguageName "English" }}
-  <section class="section section-md section-features">
-    <div class="container">
-      <div class="row justify-content-center text-center">
-        <div class="col-lg-5">
-          <h2 class="h4">Update content</h2>
-          <p>Edit <code>content/_index.md</code> to see this page change.</p>
-        </div>
-        <div class="col-lg-5">
-          <h2 class="h4">Add new content</h2>
-          <p>Add Markdown files to <code>content</code> to create new pages.</p>
-        </div>
-        <div class="col-lg-5">
-          <h2 class="h4">Configure your site</h2>
-          <p>Edit your config in <code>config/_default/params.toml</code>.</p>
-        </div>
-        <div class="col-lg-5">
-          <h2 class="h4">Read the docs</h2>
-          <p>Learn more in the <a href="https://getdoks.org/">Docs</a>.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  {{ end }}
 {{ end }}
 
-{{ define "sidebar-footer" }}
-{{ if site.Params.doks.sectionFooter -}}
-<section class="section section-md container-fluid bg-light">
-  <div class="row justify-content-center text-center">
-    <div class="col-lg-7">
-      <h2 class="mt-2">Start building with Doks today</h2>
-      <a class="btn btn-primary rounded-pill px-4 my-2" href="/docs/{{ if site.Params.doks.docsVersioning }}{{ site.Params.doks.docsVersion }}/{{ end }}prologue/introduction/" role="button">{{ i18n "get-started" }}</a>
-    </div>
-  </div>
-</section>
-{{ end -}}
-{{ end }}
+{{ define "sidebar-footer" }}{{ end }}

@@ -1,21 +1,20 @@
-title = "My Docs"
+title = "Имя Фамилия"
 baseURL = "https://el-cortador.github.io/my-techwriter-portfolio/"
 disableAliases = true
 disableHugoGeneratorInject = true
-# disableKinds = ["taxonomy", "term"]
+disableKinds = ["taxonomy", "term"]
 enableEmoji = true
 enableGitInfo = false
 enableRobotsTXT = true
-languageCode = "en-US"
+languageCode = "ru-RU"
 rssLimit = 10
 summarylength = 20 # 70 (default)
 
-# Multilingual
-defaultContentLanguage = "en"
-disableLanguages = ["de", "nl"]
+# Multilingual (languages are configured in languages.toml)
+defaultContentLanguage = "ru"
 defaultContentLanguageInSubdir = false
 
-copyRight = "Copyright (c) 2020-2026 Thulite"
+copyRight = "Copyright (c) 2026 Dmitrii Razvozzhaev"
 
 [build.buildStats]
   enable = true
@@ -24,8 +23,6 @@ copyRight = "Copyright (c) 2020-2026 Thulite"
   home = ["html", "rss", "sitemap", "searchIndex", "llms"]
   page = ["html", "markdown"]
   section = ["html", "rss", "sitemap"]
-  taxonomy = ["html", "rss", "sitemap"]
-  term = ["html", "rss", "sitemap"]
 
 [outputFormats.searchIndex]
   mediaType = "application/json"
@@ -64,15 +61,8 @@ copyRight = "Copyright (c) 2020-2026 Thulite"
     dir = ":cacheDir/:project"
     maxAge = -1 # "30m"
 
-[taxonomies]
-  contributor = "contributors"
-  category = "categories"
-  tag = "tags"
-
 [permalinks]
-  blog = "/blog/:slug/"
   docs = "/docs/:sections[1:]/:slug/"
-# docs = "/docs/1.0/:sections[1:]/:slug/"
 
 [minify.tdewolff.html]
   keepComments = true # If set to false, build signatures are removed
