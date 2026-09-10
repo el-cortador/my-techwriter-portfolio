@@ -1,5 +1,5 @@
 title = "My Docs"
-baseurl = "baseURL = "https://el-cortador.github.io/my-techwriter-portfolio""
+baseurl = "baseURL = "https://el-cortador.github.io/my-techwriter-portfolio/""
 disableAliases = true
 disableHugoGeneratorInject = true
 # disableKinds = ["taxonomy", "term"]
