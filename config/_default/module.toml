@@ -27,7 +27,10 @@
   target = "layouts"
 
 [[mounts]]
-  files = ['! home.html']
+  # home.html is replaced by the project template. about/single.html is a
+  # two-column demo with an "[image]" placeholder that Hugo matches by the
+  # /about page path; without it the page falls back to single.html
+  files = ['! home.html', '! about/**']
   source = "node_modules/@thulite/doks-core/layouts"
   target = "layouts"
 
