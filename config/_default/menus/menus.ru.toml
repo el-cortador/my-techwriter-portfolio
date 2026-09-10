@@ -1,0 +1,12 @@
+# Use pageRef instead of url: the theme renders url through absURL,
+# and a leading slash drops the /my-techwriter-portfolio/ subpath.
+
+[[main]]
+  name = "Обо мне"
+  pageRef = "/about"
+  weight = 10
+
+[[main]]
+  name = "Примеры документации"
+  pageRef = "/docs"
+  weight = 20

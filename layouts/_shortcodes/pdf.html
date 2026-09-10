@@ -1,0 +1,35 @@
+{{- /*
+  Renders a PDF preview with PDF and DOCX download buttons.
+  Both files are looked up as resources of the current section bundle.
+
+  Usage:
+    {{< pdf file="gost-19-technical-specification" name="ТЗ_ГОСТ_19" >}}
+
+  Parameters:
+    file  base file name without extension; <file>.pdf and <file>.docx must exist
+    name  file name offered on download, without extension (optional)
+*/ -}}
+{{- $file := .Get "file" -}}
+{{- if not $file -}}
+  {{- errorf "pdf shortcode: missing \"file\" parameter. %s" .Position -}}
+{{- end -}}
+{{- $name := .Get "name" | default $file -}}
+{{- $section := .Page.CurrentSection -}}
+{{- $pdf := $section.Resources.Get (printf "%s.pdf" $file) -}}
+{{- $docx := $section.Resources.Get (printf "%s.docx" $file) -}}
+{{- if not $pdf -}}
+  {{- errorf "pdf shortcode: %s.pdf not found in section %s. %s" $file $section.Path .Position -}}
+{{- end -}}
+{{- if not $docx -}}
+  {{- errorf "pdf shortcode: %s.docx not found in section %s. %s" $file $section.Path .Position -}}
+{{- end -}}
+<div class="pdf-viewer my-4">
+  <div class="d-flex flex-wrap gap-2 mb-3">
+    <a class="btn btn-primary" href="{{ $pdf.RelPermalink }}" download="{{ $name }}.pdf">{{ i18n "download_pdf" }}</a>
+    <a class="btn btn-outline-primary" href="{{ $docx.RelPermalink }}" download="{{ $name }}.docx">{{ i18n "download_docx" }}</a>
+  </div>
+  <p class="d-md-none">{{ i18n "pdf_mobile_note" }}</p>
+  <object class="pdf-viewer-frame d-none d-md-block" data="{{ $pdf.RelPermalink }}" type="application/pdf" aria-label="{{ $name }}">
+    <p>{{ i18n "pdf_unsupported" }} <a href="{{ $pdf.RelPermalink }}">{{ i18n "open_pdf" }}</a></p>
+  </object>
+</div>

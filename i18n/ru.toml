@@ -1,0 +1,77 @@
+[404_text]
+other = "Страница, которую вы ищете, не существует или была перемещена."
+
+[404_title]
+other = "Страница не найдена :("
+
+[browse]
+other = "Обзор"
+
+[chapter_next]
+other = "Далее"
+
+[chapter_previous]
+other = "Назад"
+
+[download_docx]
+other = "Скачать DOCX"
+
+[download_pdf]
+other = "Скачать PDF"
+
+[edit_page]
+other = "Редактировать страницу на"
+
+[get_started]
+other = "Начать"
+
+[home]
+other = "Главная"
+
+[in]
+other = "в"
+
+[by]
+other = "автор:"
+
+[last_updated]
+other = "Обновлено"
+
+[minute]
+one = "минута"
+few = "минуты"
+many = "минут"
+other = "минуты"
+
+[on_this_page]
+other = "На этой странице"
+
+[open_pdf]
+other = "Открыть PDF"
+
+[pdf_mobile_note]
+other = "Предпросмотр PDF доступен на компьютере. На телефоне скачайте файл кнопкой выше."
+
+[pdf_unsupported]
+other = "Браузер не может показать PDF на странице."
+
+[reading_time]
+other = "Время чтения"
+
+[search_loading]
+other = "Загрузка поискового индекса…"
+
+[search_no_recent]
+other = "Нет недавних запросов"
+
+[search_no_results]
+other = "Ничего не найдено"
+
+[search_placeholder]
+other = "Поиск"
+
+[search_title]
+other = "Поиск"
+
+[video_unsupported]
+other = "Ваш браузер не поддерживает встроенное видео. Вы можете <a href=\"{{ .RelPermalink }}\">скачать его</a> и посмотреть в любом видеоплеере."
