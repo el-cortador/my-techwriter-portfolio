@@ -53,9 +53,12 @@ Docs as Code | OpenAPI (Swagger) | REST API | DITA | Single-Sourcing | Markdown 
 
 ## Достижения и вклад в сообщество
 
--	Спикер профильных конференций: Techwriter Days ([2024](https://techwriterdays.ru/ru/talk/116471), [2025](https://techwriterdays.ru/ru/talk/123873), [2026](https://techwriterdays.ru/ru/talk/137964)), WriteConf ([2026](https://writeconf.ru/lp/writeconf/speeches/techdocsbench-sozdanie-kompleksnogo-benchmarka-dlya-otsenki-tekhnicheskoi-dokumentatsii-sozdannoi-llm)), CodeFest ([2023](https://www.youtube.com/watch?si=FQQvfnWviCl1QoNo&v=2mohNu1Hrro&feature=youtu.be))
--	[Ментор](https://mentorintech.ru/ux-mentors/) по направлению UX/UI Design & Writing программы Mentor In Tech
--	Автор [Telegram-канала](https://t.me/tekhpisovoe) о техническом писательстве
+-	Спикер профильных конференций:
+  - Techwriter Days: [2024](https://clck.ru/3W48W4), [2025](https://clck.ru/3W48Wt), [2026](https://clck.ru/3W48YD)
+  - WriteConf: [2026](https://clck.ru/3W48ZJ)
+  - CodeFest ([2023](https://clck.ru/3W48a3))
+-	[Ментор](https://clck.ru/3W48b3) по направлению *UX/UI Design & Writing* программы **Mentor In Tech**
+-	Автор [Telegram-канала](https://clck.ru/3W48bR) о техническом писательстве
 
 ## Образование
 
@@ -66,12 +69,12 @@ Docs as Code | OpenAPI (Swagger) | REST API | DITA | Single-Sourcing | Markdown 
 
 ### Курсы
 
-- «Документирование API» (2025)
-- «UX-редактор», Нетология (2025)
-- «Технический писатель», documentat.io (2022)
+- «Документирование API», documentat.io — [2025](https://clck.ru/3W48dm)
+- «UX-редактор», Нетология — [2025](https://clck.ru/3W48i7)
+- «Технический писатель», documentat.io — [2022](https://clck.ru/3W48j7)
 
 ## Контакты
 
 - Email: [d.o.razvozzhaev@yandex.ru](mailto:d.o.razvozzhaev@yandex.ru)
-- Telegram: [@el_cortador](https://t.me/el_cortador)
-- GitHub: [github.com/el-cortador](https://github.com/el-cortador)
+- Telegram: [@el_cortador](https://clck.ru/3W48cT)
+- GitHub: [github.com/el-cortador](https://clck.ru/3W48cp)
