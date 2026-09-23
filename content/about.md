@@ -54,24 +54,20 @@ Docs as Code | OpenAPI (Swagger) | REST API | DITA | Single-Sourcing | Markdown 
 ## Достижения и вклад в сообщество
 
 -	Спикер профильных конференций:
-  - Techwriter Days: [2024](https://clck.ru/3W48W4), [2025](https://clck.ru/3W48Wt), [2026](https://clck.ru/3W48YD)
-  - WriteConf: [2026](https://clck.ru/3W48ZJ)
-  - CodeFest ([2023](https://clck.ru/3W48a3))
+    - Techwriter Days: [2024](https://clck.ru/3W48W4), [2025](https://clck.ru/3W48Wt), [2026](https://clck.ru/3W48YD)
+    - WriteConf: [2026](https://clck.ru/3W48ZJ)
+    - CodeFest: [2023](https://clck.ru/3W48a3)
 -	[Ментор](https://clck.ru/3W48b3) по направлению *UX/UI Design & Writing* программы **Mentor In Tech**
 -	Автор [Telegram-канала](https://clck.ru/3W48bR) о техническом писательстве
 
-## Образование
+## Образование и курсы
 
-### Омский государственный университет им. Ф.М. Достоевского
-
-- Факультет иностранных языков, магистр (2015-2017)
-- Факультет иностранных языков, бакалавр (2011-2015)
-
-### Курсы
-
-- «Документирование API», documentat.io — [2025](https://clck.ru/3W48dm)
-- «UX-редактор», Нетология — [2025](https://clck.ru/3W48i7)
-- «Технический писатель», documentat.io — [2022](https://clck.ru/3W48j7)
+- Документирование API, documentat.io — [2025](https://clck.ru/3W48dm)
+- UX-редактор, Нетология — [2025](https://clck.ru/3W48i7)
+- Технический писатель, documentat.io — [2022](https://clck.ru/3W48j7)
+- ОмГУ им. Ф.М. Достоевского:
+    - Факультет иностранных языков, магистр (2015-2017)
+    - Факультет иностранных языков, бакалавр (2011-2015)
 
 ## Контакты
 
