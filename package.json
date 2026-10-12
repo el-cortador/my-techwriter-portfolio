@@ -13,7 +13,8 @@
     "dev": "hugo server --disableFastRender --noHTTPCache",
     "format": "prettier **/** -w -c",
     "build": "hugo --minify --gc",
-    "preview": "vite preview --outDir public"
+    "preview": "vite preview --outDir public",
+    "fetch:gost": "aws s3 sync s3://my-techwriter-portfolio-assets/gost-docs/ content/docs/gost-docs/ --endpoint-url https://s3.cloud.ru --region ru-central-1 --exclude \"*\" --include \"*.pdf\" --include \"*.docx\""
   },
   "dependencies": {
     "@thulite/doks-core": "^1.9.3",

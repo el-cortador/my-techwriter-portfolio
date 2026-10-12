@@ -4,3 +4,7 @@
 node_modules
 public
 resources
+
+# GOST documents live in Cloud.ru Object Storage, fetched by `npm run fetch:gost`
+content/docs/gost-docs/*.pdf
+content/docs/gost-docs/*.docx

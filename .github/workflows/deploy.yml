@@ -45,6 +45,19 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      # GOST .docx/.pdf files are not stored in git: they live in a private
+      # Cloud.ru Object Storage bucket and are downloaded into the page bundle
+      # before the build, so the pdf shortcode finds them as page resources.
+      - name: Fetch GOST documents from object storage
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.S3_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.S3_SECRET_ACCESS_KEY }}
+          # Recent AWS CLI versions send extra checksums by default,
+          # which S3-compatible storages may reject
+          AWS_REQUEST_CHECKSUM_CALCULATION: when_required
+          AWS_RESPONSE_CHECKSUM_VALIDATION: when_required
+        run: npm run fetch:gost
+
       - name: Build site
         run: npm run build -- --baseURL "${{ steps.pages.outputs.base_url }}/"
 
